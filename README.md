@@ -1,12 +1,13 @@
-# Readme Markdown files Builder for Your Github Project – ReadmeCodeGen
+# Builder Page – ReadmeCodeGen
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Project Structure](#project-structure)
 3. [Builder Page Overview](#builder-page-overview)
-4. [Key Features](#key-features)
-5. [Component Architecture](#component-architecture)
+4. [GitHub README Editor](#github-readme-editor)
+5. [Key Features](#key-features)
+6. [Component Architecture](#component-architecture)
    - [BuilderNavbar](#buildernavbar)
    - [Section Templates & Management](#section-templates--management)
    - [ReadmeEditor](#readmeeditor)
@@ -15,7 +16,8 @@
    - [AI Enhancement Tools](#ai-enhancement-tools)
    - [File Tree & Badge Insertion](#file-tree--badge-insertion)
    - [Project Management](#project-management)
-6. [How to Use the Builder](#how-to-use-the-builder)
+   - [GitHub Integration](#github-integration)
+7. [How to Use the Builder](#how-to-use-the-builder)
    - [Creating a New Project](#creating-a-new-project)
    - [Adding and Managing Sections](#adding-and-managing-sections)
    - [Editing and Previewing Markdown](#editing-and-previewing-markdown)
@@ -24,17 +26,22 @@
    - [Saving and Loading Projects](#saving-and-loading-projects)
    - [Exporting and Copying Markdown](#exporting-and-copying-markdown)
    - [Split Screen and Word Wrap](#split-screen-and-word-wrap)
-7. [Advanced Features](#advanced-features)
+8. [How to Use GitHub README Editor](#how-to-use-github-readme-editor)
+   - [Updating Created READMEs](#updating-created-readmes)
+   - [Loading Repository READMEs to Builder](#loading-repository-readmes-to-builder)
+   - [Repository Management](#repository-management)
+9. [Advanced Features](#advanced-features)
    - [Drag-and-Drop Section Reordering](#drag-and-drop-section-reordering)
    - [Custom Section Templates](#custom-section-templates)
    - [Live Markdown Preview](#live-markdown-preview)
    - [Accessibility and Responsiveness](#accessibility-and-responsiveness)
-8. [Component API Reference](#component-api-reference)
-9. [Best Practices & Design Decisions](#best-practices--design-decisions)
-10. [Contributing](#contributing)
-11. [FAQ](#faq)
-12. [License](#license)
+10. [Component API Reference](#component-api-reference)
+11. [Best Practices & Design Decisions](#best-practices--design-decisions)
+12. [Contributing](#contributing)
+13. [FAQ](#faq)
+14. [License](#license)
 
+---
 
 ## Introduction
 
@@ -45,12 +52,38 @@ The **Github Readme Markdown Builder** page in the ReadmeCodeGen app is a powerf
 
 It uses a modular section-based approach and real-time markdown editing. The AI adds content enhancement, making it easier to manage projects. This guide will help you understand how to use the Builder to its full potential.
 
-<img width="1894" height="1079" alt="Screenshot 2025-07-10 205847" src="https://github.com/user-attachments/assets/f4bc94d4-b531-40ce-abde-bd7f654a6eb7" />
-
+---
 
 ## Builder Page Overview
 
 The Builder page is the heart of ReadmeCodeGen, offering a modular, section-based approach to README creation. Users can add, remove, reorder, and edit sections, preview the result in real time, and leverage AI tools to enhance their content. The interface is designed for speed, clarity, and flexibility, supporting both quick edits and in-depth documentation projects.
+
+---
+
+## GitHub README Editor
+
+The **GitHub README Editor** is a powerful tool that bridges the gap between the Builder and GitHub repositories. It allows users to directly update README files in their GitHub repositories without manual copying and pasting.
+
+- 👉 [Try the GitHub README Editor](https://readmecodegen.vercel.app/builder/github-readme-editor)
+
+### Key Capabilities
+
+- **Direct GitHub Integration**: Update README files directly in your repositories
+- **Two-Way Workflow**:
+  - Deploy READMEs created in the builder to GitHub
+  - Load existing repository READMEs into the builder for enhancement
+- **Repository Management**: Select from your GitHub repositories with authentication
+- **Project Loading**: Load saved projects from the builder into any repository
+- **Real-time Editing**: Edit README content with live preview
+- **Commit Control**: Custom commit messages with direct GitHub commits
+- **Error Handling**: Comprehensive error handling and feedback system
+
+### Authentication & Security
+
+- **GitHub OAuth**: Secure authentication using GitHub's OAuth flow
+- **Repository Access**: Access to repositories you own or have write permissions to
+- **Token Management**: Automatic token handling for API requests
+- **Permission Scopes**: Minimal required permissions for README management
 
 ---
 
@@ -78,9 +111,6 @@ The Builder page is the heart of ReadmeCodeGen, offering a modular, section-base
   - Import and upload dialogs for existing README content.
   - AI enhancement trigger.
   - Split screen toggle for side-by-side editing and preview.
- 
-  <img width="1885" height="196" alt="Screenshot 2025-07-10 210057" src="https://github.com/user-attachments/assets/fe1caff1-b8fb-4bff-897c-0fae0579bb73" />
-
 
 ### Section Templates & Management
 
@@ -93,18 +123,12 @@ The Builder page is the heart of ReadmeCodeGen, offering a modular, section-base
 - **Monaco Editor**: Rich markdown editing with syntax highlighting, word wrap toggle, and internal padding for comfort.
 - **AI Enhancement**: Enhance the current section or the entire document with AI.
 - **Insert Tools**: Insert badges, links, or file trees directly into the markdown.
-  
-  <img width="1421" height="594" alt="Screenshot 2025-07-10 210135" src="https://github.com/user-attachments/assets/1bae30d8-a403-4128-b210-2e49d07063be" />
-
 
 ### ReadmePreview
 
 - **Live Rendering**: Real-time preview of your markdown, styled to match GitHub’s appearance.
 - **Empty State**: Friendly prompts when no content is present.
 - **Copy/Download/Preview on GitHub**: Export your markdown or preview it in a GitHub-like environment.
-  
-  <img width="1406" height="630" alt="Screenshot 2025-07-10 210218" src="https://github.com/user-attachments/assets/489b8201-f01b-433b-9c96-63d39daa7171" />
-
 
 ### Dialogs & Modals
 
@@ -126,9 +150,6 @@ The Builder page is the heart of ReadmeCodeGen, offering a modular, section-base
 - **InsertStaticBadge**: Add shields.io or custom badges.
 - **InsertLinkButton**: Insert styled markdown links.
 - **InsertFileTree**: Visualize and insert a file/folder structure as your desire style like mermaid or text tree.
-  
-<img width="1415" height="596" alt="Screenshot 2025-07-10 210304" src="https://github.com/user-attachments/assets/a6a815a2-d4a4-4197-be97-a1810a04546f" />
-
 
 ### Project Management
 
@@ -152,9 +173,6 @@ The Builder page is the heart of ReadmeCodeGen, offering a modular, section-base
 2. Click a template to add it to **Your Sections**.
 3. Reorder sections via drag-and-drop.
 4. Reset or remove sections as needed.
-   
-<img width="466" height="744" alt="Screenshot 2025-07-10 210401" src="https://github.com/user-attachments/assets/c8ea8072-7670-416a-9e44-30cda819b7f7" />
-
 
 ### Editing and Previewing Markdown
 
@@ -188,8 +206,48 @@ The Builder page is the heart of ReadmeCodeGen, offering a modular, section-base
 
 - Toggle **Split Screen** for side-by-side editing and preview.
 - Use the **Word Wrap** button in the editor to toggle line wrapping.
-  
-<img width="1890" height="818" alt="Screenshot 2025-07-10 210451" src="https://github.com/user-attachments/assets/6c769334-1312-4aaf-aad2-600f0a73270a" />
+
+---
+
+## How to Use GitHub README Editor
+
+The GitHub README Editor provides two main workflows for managing README files in your GitHub repositories.
+
+### Updating Created READMEs
+
+If you've already created a README using the builder, follow these steps to update it in your GitHub repository:
+
+1. **Sign in with GitHub** - Click the sign-in button to authenticate and access your repositories
+2. **Select your repository** - Choose the repository where you want to update the README file
+3. **Load your saved project** - Click "Your Saved Projects" button, then select and load the README you created in the builder
+4. **Review and edit (optional)** - Preview the content and make any final edits if needed
+5. **Commit and update** - Enter a commit message and click "Commit changes" to save directly to your GitHub repository
+6. **Verify on GitHub** - Visit your GitHub repository to see the updated README file
+
+### Loading Repository READMEs to Builder
+
+To enhance an existing README with advanced features, follow these steps:
+
+1. **Sign in with GitHub** - Authenticate to access your repositories
+2. **Select repository** - Choose the repository whose README you want to edit
+3. **Load into builder** - Click "Load this README in Builder" button to transfer the content to the builder interface
+4. **Edit in builder** - Use advanced features like AI enhancement, drag-and-drop sections, and live preview
+5. **Save and return** - Save your project and return here to update the repository with your improved README
+
+### Repository Management
+
+- **Repository Selection**: Browse and search through your GitHub repositories
+- **Permission Verification**: Ensure you have write access to the selected repository
+- **Content Fetching**: Automatically load existing README files or create new ones
+- **Commit History**: View and manage commit messages for your changes
+- **Error Handling**: Clear error messages and troubleshooting guidance
+
+### Important Notes
+
+- Make sure you have write permissions to the repository you're updating
+- The tool will show you which repository you're updating to prevent mistakes
+- You can preview changes before committing them
+- If you encounter any issues, use the feedback link for support
 
 ---
 
@@ -253,6 +311,18 @@ A: Yes, use the Import or Upload options in the sections and editor for editing.
 
 **Q: Is the markdown preview identical to GitHub?**  
 A: The preview closely matches GitHub’s rendering, but for the most accurate result, use the “Preview on GitHub” feature.
+
+**Q: How does the GitHub README Editor work?**  
+A: The editor allows you to directly update README files in your GitHub repositories. You can deploy READMEs created in the builder or load existing repository READMEs for enhancement.
+
+**Q: Do I need to manually copy and paste README content?**  
+A: No! The GitHub README Editor handles all the copying and pasting automatically. You can update READMEs directly in your repositories with a single click.
+
+**Q: What permissions does the GitHub integration require?**  
+A: The tool only requires access to your repositories for README management. It uses minimal OAuth scopes and doesn't access any private code or sensitive data.
+
+**Q: Can I use the editor with private repositories?**  
+A: Yes, as long as you have write permissions to the repository, you can update READMEs in both public and private repositories.
 
 ---
 
