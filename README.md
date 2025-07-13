@@ -1,4 +1,4 @@
-# Builder Page – ReadmeCodeGen
+# Github README generator – ReadmeCodeGen
 
 ## Table of Contents
 
