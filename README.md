@@ -52,6 +52,8 @@ The **Github Readme Markdown Builder** page in the ReadmeCodeGen app is a powerf
 
 It uses a modular section-based approach and real-time markdown editing. The AI adds content enhancement, making it easier to manage projects. This guide will help you understand how to use the Builder to its full potential.
 
+<img width="1890" height="1077" alt="Screenshot 2025-07-15 200951" src="https://github.com/user-attachments/assets/bbebb602-c8c1-4820-8fdf-9c33b313be06" />
+
 ---
 
 ## Builder Page Overview
@@ -123,6 +125,9 @@ The **GitHub README Editor** is a powerful tool that bridges the gap between the
 - **Monaco Editor**: Rich markdown editing with syntax highlighting, word wrap toggle, and internal padding for comfort.
 - **AI Enhancement**: Enhance the current section or the entire document with AI.
 - **Insert Tools**: Insert badges, links, or file trees directly into the markdown.
+  
+<img width="1890" height="818" alt="Screenshot 2025-07-10 210451" src="https://github.com/user-attachments/assets/b8f4a434-ff69-4acc-8e27-0d16ebe4763e" />
+
 
 ### ReadmePreview
 
@@ -207,6 +212,8 @@ The **GitHub README Editor** is a powerful tool that bridges the gap between the
 - Toggle **Split Screen** for side-by-side editing and preview.
 - Use the **Word Wrap** button in the editor to toggle line wrapping.
 
+<img width="1890" height="818" alt="Screenshot 2025-07-10 210451" src="https://github.com/user-attachments/assets/5d6e66d7-3b30-4691-9f0b-1f542fb0b40c" />
+
 ---
 
 ## How to Use GitHub README Editor
@@ -223,6 +230,9 @@ If you've already created a README using the builder, follow these steps to upda
 4. **Review and edit (optional)** - Preview the content and make any final edits if needed
 5. **Commit and update** - Enter a commit message and click "Commit changes" to save directly to your GitHub repository
 6. **Verify on GitHub** - Visit your GitHub repository to see the updated README file
+
+<img width="1900" height="819" alt="Screenshot 2025-07-15 201358" src="https://github.com/user-attachments/assets/b94c8340-ad7d-4f12-bd4c-a15a08df4611" />
+
 
 ### Loading Repository READMEs to Builder
 
