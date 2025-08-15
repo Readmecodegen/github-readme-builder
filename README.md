@@ -1,5 +1,4 @@
-# Github README generator
-Hi Star this repo.
+# Github README generator - ReadmeCodeGen
 
 ## Table of Contents
 
