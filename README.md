@@ -58,7 +58,7 @@ It uses a modular section-based approach and real-time markdown editing. The AI 
 
 The Builder page is the heart of ReadmeCodeGen, offering a modular, section-based approach to README creation. Users can add, remove, reorder, and edit sections, preview the result in real time, and leverage AI tools to enhance their content. The interface is designed for speed, clarity, and flexibility, supporting both quick edits and in-depth documentation projects.
 
-## GitHub README Editor
+## README Editor
 
 The **GitHub README Editor** is a powerful tool that bridges the gap between the Builder and GitHub repositories. It allows users to directly update README files in their GitHub repositories without manual copying and pasting.
 
