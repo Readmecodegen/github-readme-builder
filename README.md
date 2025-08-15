@@ -54,7 +54,7 @@ It uses a modular section-based approach and real-time markdown editing. The AI 
 <img width="1890" height="1077" alt="Screenshot 2025-07-15 200951" src="https://github.com/user-attachments/assets/bbebb602-c8c1-4820-8fdf-9c33b313be06" />
 
 
-## Builder Page Overview
+## Builder Overview
 
 The Builder page is the heart of ReadmeCodeGen, offering a modular, section-based approach to README creation. Users can add, remove, reorder, and edit sections, preview the result in real time, and leverage AI tools to enhance their content. The interface is designed for speed, clarity, and flexibility, supporting both quick edits and in-depth documentation projects.
 
