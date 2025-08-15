@@ -41,7 +41,6 @@
 13. [FAQ](#faq)
 14. [License](#license)
 
----
 
 ## Introduction
 
@@ -54,7 +53,6 @@ It uses a modular section-based approach and real-time markdown editing. The AI 
 
 <img width="1890" height="1077" alt="Screenshot 2025-07-15 200951" src="https://github.com/user-attachments/assets/bbebb602-c8c1-4820-8fdf-9c33b313be06" />
 
----
 
 ## Builder Page Overview
 
